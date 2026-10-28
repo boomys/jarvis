@@ -1,0 +1,35 @@
+name: APK derle
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Kaynağı al
+        uses: actions/checkout@v4
+
+      - name: JDK 17
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: "17"
+
+      - name: Android SDK kur
+        uses: android-actions/setup-android@v3
+
+      - name: SDK paketleri
+        run: sdkmanager "platforms;android-34" "build-tools;34.0.0"
+
+      - name: APK derle
+        run: bash android/build-apk.sh
+
+      - name: APK'yı yükle
+        uses: actions/upload-artifact@v4
+        with:
+          name: jarvis-apk
+          path: android/JARVIS.apk
+          if-no-files-found: error

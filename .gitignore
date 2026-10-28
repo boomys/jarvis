@@ -1,0 +1,10 @@
+node_modules/
+.env
+dev.log
+dev.pid
+.DS_Store
+tools/
+android/build/
+android/debug.keystore
+android/JARVIS.apk
+android/JARVIS.apk.idsig
