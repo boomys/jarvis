@@ -5,8 +5,9 @@ simgesiyle açılır, "efendim" diye hitap eder.
 
 ## APK'yı indir / kur
 
-1. [Releases](https://github.com/boomys/jarvis/releases) sayfasından `JARVIS.apk` indir
-   (yoksa **Actions** sekmesindeki son `APK derle` çalışmasının artifact'ını indir).
+1. Hazır APK'yı indir:
+   **https://site-2c429ebe943e42499156764fc0b8ff73.freebuff.page/JARVIS.apk**
+   Alternatif: **Actions** → son başarılı `APK derle` çalışması → **Artifacts** → `jarvis-apk`.
 2. Telefonda dosyayı aç → "bilinmeyen kaynaktan kurulum" izni ver → kur.
 3. İlk açılışta mikrofon/kamera/konum izinlerini ver.
 
